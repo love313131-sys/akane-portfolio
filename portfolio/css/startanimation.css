@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+#animation {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    z-index: 998;
+}
+
+#base {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+
+    fill-opacity: 0; /*透過0で塗りの色が見えない状態*/
+    transition: fill-opacity 2s; /*0.5秒で色が付くアニメーション*/
+    fill: none; /*塗りの色*/
+    stroke: #000; /*線の色*/
+}
+#base.done{
+    fill: #000; /*塗りの色*/
+    fill-opacity: 1; /*透過1で塗りの色が見える状態*/
+    stroke: none; /*線の色*/
+}

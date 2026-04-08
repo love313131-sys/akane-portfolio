@@ -1,0 +1,236 @@
+<!--先にspを作って、次にPC版を作る-->
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>ポートフォリオ</title>
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'xts3zmr',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  
+</head>
+
+<style>
+  .slider img {
+    width: 100vw;
+    height: 85vh;
+    object-fit: cover;
+  }
+</style>
+
+<body>
+  <header class="page-header" id="top">
+    <div class="header-container">
+      <div class="sitetitle">
+        <h1 class="header-logo">Portfolio</h1>
+      </div>
+      <div class="navbtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div><!-- モバイル用ナビゲーション開閉ボタン。class="close"をつけるとバツになる -->
+       <!--<nav>
+        <ul class="header-nav collapse">
+          <li><a href="images/web-sotugyou.png">作品１</a></li>
+          <li><a href="images/maturi-2.png">作品２</a></li>
+          <li><a href="images/baner.jpg">作品３</a></li>
+          <li><a href="images/Open House.png">作品４</a></li>
+          <li><a href="images/Dating site.png">作品５</a></li>
+          <li><a href="images/Drawing class.png">作品6</a></li>
+          <li><a href="images/Asian Food Fair  Poster.png">作品7</a></li>
+          <li><a href="images/cofe-flyer.png">作品8</a></li>
+        </ul>
+      </nav>-->
+    </div>
+    <div class="site-name">Akane Murai</div>
+     <nav>
+        <ul class="header-nav main-nav ">
+          <li><a href="index_ver_a.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  <div class="title"><h4 >想いをカタチに。</h4>
+<p class="subtitle">行動につながるWebデザインを制作しています。</p>
+</div>
+  <section class="main-slider">
+    <div id="mv" class="cover-content">
+      <ul class="slider">
+        <li><img src="images/css.png" alt="mv1"></li>
+        <li><img src="images/photshop-ps-2.png" alt="mv2"></li>
+        <li><img src="images/illustrator-ps.png" alt="mv3"></li>
+        <li><img src="images/mywork-2.png" alt="mv4"></li>
+      </ul>
+    </div>
+  </section>
+
+  <main class="all">
+    <div class="all-section">
+      <section id="info">
+        <article class="items-about">
+          <h2>About Me</h2>
+          <p>はじめまして。
+            9か月間、WEBスクールと職業訓練校でWEBデザインを学んできました。<br><br>
+            バナーやフライヤーの制作に加え、HP・LPの制作も行っており、HTML/CSSを用いたコーディングや レスポンシブ対応も可能です。<br><br>
+            私が大切に思っているのは、「人の気持ちを動かすデザイン」です。<br>
+            見る人の心を動かし「買いたい」「行ってみたい」と思ってもらえるデザインを意識しています。<br>
+            見るだけで終わらない、心に残るデザインの制作を心がけています。<br><br>
+            今後も、伝わるだけでなく行動につながるデザインを目指して取り組んでいきたいと思います。</p>
+          <div class="box">
+            <img src="images/miy.png" class="circle">
+            <img src="images/frem-1.png" class="me">
+          </div>
+
+        </article>
+        <article class="items-skill">
+          <h2>Skill</h2>
+          <p>HTML/CSS　Visual Studio Code <br>PHOTOSHOP　ILLUSTRATOR <br>CANVA　WIX　Excel　Word</p>
+          <h4>バナー　WEBサイト（レスポンシブ対応）<br>　LP　フライヤー　名刺　ポスター　 <br>DMはがき　メニュー</h4>
+        </article>
+      </section>
+
+      <section id="contents">
+        <div class="items-1">
+          <h2>Production</h2>
+          <article class="items">
+            <div class="items_photo"><img src="images/web-sotugyou.png" alt="img01"> </div>
+            <div class="items_caption">
+              <h4>訓練校の課題　WEBサイト<br>使用ツール：Illustrator　Photoshop　Visual Studio Code</h4>
+              <p>
+                大人のための高級リゾートをコンセプトに、ホテルとゴルフ場の高級感を伝えるWEBサイトを制作しました。余白を活かしたレイアウトと落ち着いた配色により、静寂と上質さを演出し,ファーストビューでは非日常感を感じられユーザーの<br>期待感を高める設計にしています。視認性と高級感を両立し、「訪れたくなる」を意識してデザインしました。
+              </p>
+              <a href="images/kadai2-2-1.png">▶ 詳細を見る</a>
+            </div>
+          </article>
+
+          <article class="items">
+            <div class="items_photo"><img src="images/maturi-2.png" alt="img02"> </div>
+            <div class="items_caption">
+              <h4>訓練校の課題　WEBサイト<br>使用ツール：Illustrator　Photoshop　Visual Studio Code</h4>
+              <p>
+                「祭りの高揚感と和」をテーマに、和風カフェのWEBサイトを制作しました。
+                <br>メインカラーには赤を採用し、視線を引きつけ活気ある印象を表現。<br>縦書きのテキストや和風フォントを取り入れることで、伝統的な雰囲気を演出しています。配色は赤と金を中心に、印象に残る華やかなデザインに仕上げています。
+              </p>
+              <a href="images/maturi-2.png">▶ 詳細を見る</a>
+            </div>
+          </article>
+
+          <article class="items">
+            <div class="items_photo"><img src="images/baner.jpg" alt="img03"> </div>
+            <div class="items_caption">
+              <h4>訓練校の課題　バナー<br>使用ツール：Illustrator　Photoshop </h4>
+              <p>夏らしい爽やかさとフレッシュ感が伝わるデザインを意識しています。</p>
+              <a href="images/baner.jpg">▶ 詳細を見る</a>
+            </div>
+          </article>
+
+          <article class="items">
+            <div class="items_photo"><img src="images/Open House.png" alt="img04"> </div>
+            <div class="items_caption">
+              <h4>WEBスクールの課題　バナー<br>使用ツール：Photoshop</h4>
+              <p>落ち着きのある高級感と信頼感が伝わるデザインを意識しています。<br>
+                建物の写真を活かしつつ、左側に情報を配置することで視認性を高めました。<br>見た人が安心して来場したくなるようなデザインを目指しています。</p>
+              <a href="images/Open House.png">▶ 詳細を見る</a>
+            </div>
+          </article>
+
+          <article class="items">
+            <div class="items_photo"><img src="images/Dating site.png" alt="img05"> </div>
+            <div class="items_caption">
+              <h4>WEBスクールの課題　バナー<br>使用ツール：Photoshop</h4>
+              <p>やわらかく華やかな印象になるようデザインしました。<br>ピンクを基調とした配色と花のあしらいで、ブライダルらしい優しさと安心感を表現しました。<br>
+                日程や特典などの情報を整理し、視認性と分かりやすさを意識しています。<br>自宅で気軽に参加できる婚活イベントの魅力が伝わるよう制作しました。
+              </p>
+              <a href="images/Dating site.png">▶ 詳細を見る</a>
+            </div>
+          </article>
+          <article class="items">
+            <div class="items_photo"><img src="images/Drawing class.png" alt="img05"> </div>
+            <div class="items_caption">
+              <h4>WEBサイトの問題集　バナー<br>使用ツール：Photoshop </h4>
+              <p>「親子で一緒に楽しむアート体験」をテーマに制作したバナーです。
+                <br>温かみのある配色と手描き風のあしらいで、子どもらしい自由さと安心感を表現しました。<br>写真とイラストを組み合わせることで、親しみやすく視覚的に楽しいデザインを意識しました。
+              </p>
+              <a href="images/Drawing class.png">▶ 詳細を見る</a>
+            </div>
+          </article>
+          <article class="items">
+            <div class="items_photo"><img src="images/Hair care.png" alt="img05"> </div>
+            <div class="items_caption">
+              <h4>WEBサイトの問題集　バナー<br>使用ツール：Photoshop </h4>
+              <p>自然と人が溶け合うようなやわらかさをイメージして制作したバナーです。<br>
+                落ち着いた色味と質感にこだわり、ナチュラルでやさしい印象に仕上げました。<br>
+                見る人に心地よさが伝わるよう、全体のバランスを意識しました。
+              </p>
+              <a href="images/Hair care.png">▶ 詳細を見る</a>
+            </div>
+          </article>
+          <article class="items">
+            <div class="items_photo"><img src="images/coffee subscription service.png" alt="img05"> </div>
+            <div class="items_caption">
+              <h4>WEBサイトの問題集　バナー<br>使用ツール：Photoshop </h4>
+              <p>落ち着いたトーンと素材感で、コーヒーの上質な時間を表現したバナーです。<br>
+                視線の流れや情報の配置を考え、シンプルで伝わりやすい構成に仕上げました。<br>
+                価格や特典がひと目で伝わるよう、情報の見せ方にもこだわっています。
+              </p>
+              <a href="images/coffee subscription service.png">▶ 詳細を見る</a>
+          </article>
+          <article class="items">
+            <div class="items_photo"><img src="images/Asian Food Fair  Poster.png" alt="img05"> </div>
+            <div class="items_caption">
+              <h4>WEBサイトの問題集　ポスター<br>使用ツール：Photoshop</h4>
+              <p>ショッピングモールで開催されるアジアンフードフェアのポスターを制作しました。<br>鮮やかな配色と大きなタイトルで視認性を高め、遠くからでも目を引くよう工夫しました。<br>
+                料理写真やイラストを組み合わせることで、多彩なアジア料理の魅力を表現しています。<br>思わず足を止めたくなるような、印象に残るデザインを目指しました。</p>
+              <a href="images/Asian Food Fair  Poster.png">▶ 詳細を見る</a>
+
+            </div>
+          </article>
+          <article class="items">
+            <div class="items_photo"><img src="images/cofe-flyer.png" alt="img05"> </div>
+            <div class="items_caption">
+              <h4>WEBサイトの問題集　フライヤー<br>使用ツール：Photoshop</h4>
+              <p>
+                温かみのある落ち着いた雰囲気を意識してフライヤーのデザインをしました。<br>背景にレンガ素材を使用し、温かみと居心地の良さを表現しています。<br>料理やドリンクの写真を配置することで、カフェのイメージが伝わるよう工夫
+                <br>しました。<br>「ランチセット割引」や「ドリンク無料」といった訴求ポイントを目立たせました。
+              </p>
+              <a href="images/cofe-flyer.png">▶ 詳細を見る</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+  <a href="#top" class="top-btn">↑</a>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.slider').slick({
+        arrows: false,
+        autoplay: true,
+        dots: true
+
+      });
+    });
+  </script>
+<footer class="footer">
+  <p>© Portfolio</p>
+</footer>
+</body>
+
+</html>

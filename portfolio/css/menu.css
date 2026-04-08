@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* モバイル向けボタン */
+.page-header{
+	position: relative;
+}
+
+.header-container{
+	display: block;
+}
+
+li{list-style-type : none;}
+
+#grovalnav ul{
+	width: 95%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#grovalnav ul li{
+	white-space: nowrap;
+}
+
+#grovalnav ul li img{
+	display: block;
+	width: 100%;
+}
+
+h1{
+	max-width: 100%;
+	margin: 0 auto;
+}
+.navbtn {
+	display: block;
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	z-index: 3;
+	top:0;
+	right: 0;
+	background-color: #555;
+  }
+
+  .navbtn span {
+  position: absolute;
+  left: 15px;
+  width: 30px;
+  height: 4px;
+  background-color: #f0f8e8; /* 優しい背景色（必要に応じて変更OK） */
+  border-radius: 4px;
+}
+
+.navbtn, .navbtn span {
+  display: inline-block;
+  transition: all .5s;
+  box-sizing: border-box;
+}
+.navbtn span:nth-of-type(1) {
+  top: 15px;
+}
+.navbtn span:nth-of-type(2) {
+  top: 28px;
+}
+.navbtn span:nth-of-type(3) {
+  bottom:15px;
+}
+
+nav{
+	position: fixed;
+	top:0;
+	width: 100%;
+	z-index: 2;
+}
+
+.header-nav{
+		background-color: rgba(255,255,255,0.9);
+		height: 100vh;
+		margin: 0;
+		padding: 10% 0 0 0;
+}
+
+.header-nav li{
+	width: 100%;
+	padding: 1rem 0;
+	border-bottom: 1px solid gray;
+}
+
+/**/  
+.header-nav.collapse {
+	display: none;
+  }
+
+nav a{
+	text-decoration: none;
+	color: #666;
+	white-space: nowrap;
+	font-size: 16px;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	padding: 1rem;
+}
+
+/*=============================
+#btn02
+=============================*/
+  .navbtn.close span:nth-of-type(1) {
+  -webkit-transform: translateY(10px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
+}
+  .navbtn.close span:nth-of-type(2) {
+  opacity: 0;
+}
+  .navbtn.close span:nth-of-type(3) {
+  -webkit-transform: translateY(-15px) rotate(-45deg);
+  transform: translateY(-15px) rotate(-45deg);
+}
+
+	/* PC向けレイアウト */
+  @media (min-width: 800px) {
+	.navbtn {
+	  display: none;
+	}
+
+  .header-nav.collapse {
+	display: none;
+  }
+  
+	.header-nav {
+	  display: flex !important;
+	  flex-direction: row;
+	}
+	
+	h1{
+		max-width: 100%;
+
+	}
+
+	.header-container{
+		width: 95%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+.header-nav{
+	padding: 0;
+	height: auto;
+	width: auto;
+}
+
+	nav{
+		position: static;
+	}
+
+	nav{
+		width: auto;
+	}
+
+	nav a{
+		margin-left: 1.5rem;
+		font-size: 1rem;
+		text-align: left;
+		padding: 0;
+	}
+	
+	#grovalnav ul{
+		display:flex;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+	
+	#grovalnav a{
+		padding: 10px;
+		border-radius: 10%;
+	}
+
+.header-nav li{
+	border: none;
+}
+
+}
